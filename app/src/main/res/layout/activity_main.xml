@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:background="@drawable/box">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/weed"
+            android:layout_marginRight="20dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ໃບອ່ອນ"
+            android:textColor="@color/four"
+            android:fontFamily="@font/nsl_extra_bold"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:adjustViewBounds="true"
+        android:background="@color/primary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/box_reverse"
+            android:orientation="vertical"
+            android:paddingHorizontal="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nsl_bold"
+                android:paddingVertical="10dp"
+                android:text="ທ.ໄຊປັນຍາ ພົງສາ 3CW2"
+                android:textColor="@color/primary"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nsl_bold"
+                android:paddingVertical="10dp"
+                android:text="ສັ່ງຊື້ສິນຄ້າ"
+                android:textColor="@color/primary"
+                android:textSize="20dp" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/txtUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/primary"
+                android:fontFamily="@font/nsl_regular"
+                android:hint="ຊື່"
+                android:padding="8dp"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/primary" />
+
+
+
+
+
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/primary"
+                android:fontFamily="@font/nsl_regular"
+                android:hint="ເບີໂທ"
+                android:padding="8dp"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/primary" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/primary"
+                android:fontFamily="@font/nsl_regular"
+                android:hint="ທີ່ຢູ່"
+                android:padding="8dp"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/primary" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nsl_bold"
+                    android:textColor="@color/primary"
+                    android:text="ໝວດສິນຄ້າ: "/>
+                <Spinner
+                    android:fontFamily="@font/nsl_bold"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/spnItemType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:theme="@style/SpinnerTheme"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nsl_bold"
+                    android:textColor="@color/primary"
+                    android:text="ປະເພດ: "/>
+                <Spinner
+                    android:fontFamily="@font/nsl_bold"
+                    android:layout_weight="1"
+                    android:id="@+id/spnItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nsl_bold"
+                    android:textColor="@color/primary"
+                    android:text="ຈຳນວນ: "/>
+                <Spinner
+                    android:fontFamily="@font/nsl_bold"
+                    android:layout_weight="1"
+                    android:id="@+id/spnItemQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/btnOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/primary"
+                    android:fontFamily="@font/nsl_bold"
+                    android:text="ສັ່ງຊື້" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/danger"
+                    android:fontFamily="@font/nsl_bold"
+                    android:text="ຍົກເລີກ" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
